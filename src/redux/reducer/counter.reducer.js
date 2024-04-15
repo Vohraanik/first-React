@@ -14,7 +14,7 @@ export const counterReducer =(state=instialState, action) => {
           return {
             count: state.count+1
           }
-      
+       
         case DECREMENT_COUNTER:
           return {
             count: state.count-1
