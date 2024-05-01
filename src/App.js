@@ -4,13 +4,14 @@ import { Provider } from "react-redux";
 import { configureStore } from "./redux/store";
 import { ThemeProvider } from "./context/Theme.context";
 import Counter from "./user/components/Counter";
+import Factorial from "./user/containers/Factorial./Factorial";
 
 function App() {
   const store = configureStore();
   return (
     <ThemeProvider>
       <Provider store={store}>
-        <Counter />
+  <Factorial/>
       </Provider>
     </ThemeProvider>
   );
